@@ -12,8 +12,8 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    // origin: [process.env.FRONTEND_URL],
-    origin: 'https://mern-stack-event-project.vercel.app/',
+    origin: [process.env.FRONTEND_URL],
+    //origin: 'https://mern-stack-event-project.vercel.app/',
     methods: ["POST"],
     credentials: true,
   })
