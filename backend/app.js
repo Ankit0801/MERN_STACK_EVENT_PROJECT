@@ -19,6 +19,12 @@ app.use(
   })
 );
 
+app.get("/",(req,res)=>{
+  res.json({
+    success: true,
+    message: "Habibi come to dubai"
+  })
+})
 
 app.use("/api/v1/message", messageRouter);
 
